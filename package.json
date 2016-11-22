@@ -4,10 +4,8 @@
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
-    "postinstall": "typings install",
     "prepublish": "tsc",
     "tsc": "tsc",
-    "typings": "typings"
   },
   "repository": {
     "type": "git",
