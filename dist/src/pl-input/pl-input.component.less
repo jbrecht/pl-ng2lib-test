@@ -1,0 +1,66 @@
+// @import '../core/colors.less';
+// @import '../core/typography.less';
+
+.host {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.border {
+  display:flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  //border: solid @gray-dark 1px;
+  border: solid gray 1px;
+  border-left-width: 1px;
+  transition: border-left-width 150ms;
+
+  &.focused {
+    border-left-width: 12px;
+    // border-color: @blue-medium;
+    border-color: blue;
+  }
+
+  .input-prefix, .input-suffix {
+    box-sizing: border-box;
+    display: block;
+    width: auto;
+    max-width: 20px;
+
+    &:empty {
+      display: none;
+    }
+  }
+}
+
+textarea {
+  height:100%;
+  resize:none;
+  &.resizable {
+    resize:both;
+  }
+}
+
+input {
+  height: 30px;
+}
+
+input, textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  // font-family: @roboto;
+  line-height: 30px;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 0 7px;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  //color: @gray-darkest;
+  color: gray;
+}
+

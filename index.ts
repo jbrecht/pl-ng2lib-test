@@ -5,10 +5,16 @@ import {SampleDirective} from "./src/sample.directive";
 import {SamplePipe} from "./src/sample.pipe";
 import {SampleService} from "./src/sample.service";
 
-export * from './src/sample.component';
+import {PLInputComponent} from "./src/pl-input/pl-input.component";
+import {PLTextAreaComponent} from './src/pl-input/pl-textarea.component';
+
+/*export * from './src/sample.component';
 export * from './src/sample.directive';
 export * from './src/sample.pipe';
 export * from './src/sample.service';
+
+export * from './src/pl-input/pl-input.component';
+export * from './src/pl-input/pl-textarea.component';*/
 
 @NgModule({
   imports: [
@@ -17,15 +23,19 @@ export * from './src/sample.service';
   declarations: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    PLInputComponent,
+    PLTextAreaComponent
   ],
   exports: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    PLInputComponent,
+    PLTextAreaComponent
   ]
 })
-export default class SampleModule {
+export class SampleModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: SampleModule,

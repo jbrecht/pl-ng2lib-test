@@ -1,0 +1,9 @@
+<div class="border" [ngClass]="{'focused':focused==true}">
+    <div #prefix class="input-prefix">
+        <ng-content select="[pl-prefix]"></ng-content>
+    </div>
+    <input type="text" (focus)="focus()" (blur)="blur()" placeholder="{{placeholder}}" required="{{required}}" autocomplete="{{autocomplete}}" name="{{name}}" pattern="{{pattern}}">
+    <div class="input-suffix">
+        <ng-content select="[pl-suffix]"></ng-content>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<div class="border" [ngClass]="{'focused':focused==true}">
+    <textarea (focus)="focus()" (blur)="blur" placeholder="{{placeholder}}" [ngClass]="{'resizable':resizable==true}"
+              required="{{required}}">
+    </textarea>
+</div>

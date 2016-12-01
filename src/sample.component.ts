@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sampleComponent',
-  template: `<h1>Sample component</h1>`
+  selector: 'sample-component',
+  template: `<h1>Sample component!!!</h1>`
 })
 export class SampleComponent {
 
